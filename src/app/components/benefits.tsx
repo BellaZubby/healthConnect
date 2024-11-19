@@ -20,7 +20,7 @@ const Benefits = () => {
      viewport={{once:true}}
     className='flex flex-col items-center justify-center md:items-start md:justify-start mx-4'>
         <SubText>Why Choose Us</SubText>
-        <HyperText>Our Benefits</HyperText>
+        <HyperText>Your Benefits</HyperText>
         <p className='max-w-xl tracking-wide mt-5 leading-relaxed text-center md:text-left ssm:text-lg'>Lorem, ipsum dolor sit amet consectetur 
             adipisicing elit. Quasi, provident! Numquam aut 
             id a cum facere! Ducimus distinctio corporis iure</p>

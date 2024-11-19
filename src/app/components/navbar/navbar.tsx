@@ -47,7 +47,7 @@ const Navbar = () => {
          
             <div className={`ssm:px-7 px-4 w-full fixed top-0 z-50 items-center justify-between py-4 flex md:hidden ${isTopOfPage ? "":"bg-primary-50/50 shadow-md py-12"}`}>
             <Link href={"/"} className='flex items-center gap-1'>
-              <Image src={logo} alt="logo" className="ssm:w-32 ssm:h-32 w-24 h-24 object-cover" priority/>
+              <Image src={logo} alt="logo" className="ssm:w-32 ssm:h-32 w-[90px] h-[90px] object-cover" priority/>
               <div className='flex flex-col items-center text-primary-100 font-semibold ssm:text-lg text-[16px]'>
                     <span>HealthConnect</span>
                     <span>Telemedicine</span>
@@ -87,7 +87,7 @@ const Navbar = () => {
               initial="closed"
               animate="open"
               exit="closed"
-              className='w-[300px] ssm:w-[430px] sm:w-[500px] h-screen bg-[#F3F4F6] drop-shadow-xl'>
+              className='w-[300px] ssm:w-[430px] sm:w-[500px] h-screen bg-[#F3F4F6] drop-shadow-xl overflow-y-scroll'>
               <div className='shadow-lg flex items-center justify-between px-5 py-5'>
               <Link href={"/"} className=''>
               <Image src={logo} alt="logo" className="ssm:w-32 ssm:h-32 w-24 h-24 object-cover"/>
