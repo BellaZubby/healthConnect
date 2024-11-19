@@ -145,7 +145,7 @@ export interface Benefits {
   ];
 
   export interface Socials {
-    icon: any,
+    icon: IconType,
     href: string
 }
 
@@ -165,7 +165,7 @@ export const socialIcon:Socials[] = [
 ]
 
 export interface FooterDetailType  {
-    icon:any;
+    icon:IconType;
     title:string;
   }
   

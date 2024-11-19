@@ -12,7 +12,7 @@ type Props = {
  }
 
  type closeMenuType = {
-  closeMenu : any
+  closeMenu : () => void;
 }
   const services: Array<Props> = [
     {

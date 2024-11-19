@@ -7,7 +7,7 @@ import MobilePartnersLink from './link/mobilePartners';
 import MobileBlogsLink from './link/mobileBlogs';
 
 type Props = {
-    closeMenu: any;
+    closeMenu: () => void;
 }
 
 const MobileNav = ({closeMenu}: Props) => {

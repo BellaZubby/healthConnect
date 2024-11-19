@@ -11,9 +11,6 @@ type Props = {
   title: string;
 };
 
-type Page = {
-  
-};
 const services: Array<Props> = [
     {
         title: "Video Consultation",

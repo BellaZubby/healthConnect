@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation'
 import React from 'react'
 
 type Props = {
-  closeMenu:any
+  closeMenu:() => void;
 }
 
 
