@@ -2,20 +2,147 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.button {
+  background-color: transparent;
+  padding: 10px;
+  box-shadow: inset 0 0 0 0 #096a2e;
+  transition: ease-out 0.3s;
+}
+.button:hover {
+  box-shadow: inset 200px 0 0 0 #096a2e;
+  color: #f0fdfa;
+  padding: 10px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.Btn {
+  transition: ease-out 0.4s;
+  position: relative;
+  z-index: 1;
+  border: 1px solid #b5bd11;
+}
+.Btn:hover {
+  color: #fff;
+  cursor: pointer;
+}
+.Btn:before {
+  transition: 0.3s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0%;
+  opacity: 0;
+  content: "";
+  background-color: #b5bd11;
+}
+.Btn:hover:before {
+  transition: 0.4s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
+.stripe {
+  background: repeating-linear-gradient(
+    45deg,
+    rgb(9, 106, 46),
+    rgb(9, 106, 46) 10px,
+    rgb(201, 239, 199) 10px,
+    rgba(201, 239, 199) 20px
+  );
+}
+.stripe-new {
+  background: repeating-linear-gradient(
+    45deg,
+    rgb(181, 189, 17),
+    rgb(181, 189, 17) 10px,
+    rgb(174, 164, 28) 10px,
+    rgba(174, 164, 28) 20px
+  );
+}
+.sidebar li {
+  transition: color 0.3s ease;
+}
+.sidebar li:hover {
+  color: #096a2e;
+}
+.sidebar li.active {
+  color: #096a2e;
+}
+.circle{
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  animation: ripple 15s infinite;
+  box-shadow: 0px 0px 1px 0px #508fb9;
+}
+
+.small{
+  width: 90px;
+  height: 90px;
+  left: -100px;
+  bottom: -100px;
+}
+
+.medium{
+  width: 200px;
+  height: 200px;
+  left: -200px;
+  bottom: -200px;
+}
+
+.large{
+  width: 400px;
+  height: 400px;
+  left: -300px;
+  bottom: -300px;
+}
+
+.xlarge{
+  width: 600px;
+  height: 600px;
+  left: -400px;
+  bottom: -400px;
+}
+
+.xxlarge{
+  width: 800px;
+  height: 800px;
+  left: -500px;
+  bottom: -500px;
+}
+
+.shade1{
+  opacity: 0.2;
+}
+.shade2{
+  opacity: 0.5;
+}
+
+.shade3{
+  opacity: 0.7;
+}
+
+.shade4{
+  opacity: 0.8;
+}
+
+.shade5{
+  
+  opacity: 0.9;
+}
+
+@keyframes ripple{
+  0%{
+    transform: scale(0.8);
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  
+  50%{
+    transform: scale(1.2);
+  }
+  
+  100%{
+    transform: scale(0.8);
+  }
 }
