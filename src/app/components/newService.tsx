@@ -1,6 +1,5 @@
 import React from 'react'
 import Card from './card'
-import image from '@/app/assets/hcImage.png'
 import { motion } from 'framer-motion';
 import { FaBrain, FaFileMedical, FaLaptopMedical, FaRobot, FaVideo } from 'react-icons/fa';
 import { FaHouseMedical, FaPrescriptionBottleMedical } from 'react-icons/fa6';
